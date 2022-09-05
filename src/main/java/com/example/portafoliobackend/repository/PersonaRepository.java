@@ -1,4 +1,7 @@
 package com.example.portafoliobackend.repository;
 
-public interface PersonaRepository {
+import com.example.portafoliobackend.model.Persona;
+import org.springframework.data.jpa.repository.JpaRepository;
+
+public interface PersonaRepository extends JpaRepository<Persona, Long> {
 }
